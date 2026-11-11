@@ -83,7 +83,7 @@ The developed-market notebooks retrieve historical data using `pandas_datareader
 
 1. Open the relevant Jupyter notebooks directly on GitHub.
 2. Review the Python code, saved calculations, charts and analytical findings.
-3. To rerun the notebooks, first obtain the required datasets from their authorized sources.
+3. To rerun the emerging-market notebooks, download the repository and ensure the CSV datasets remain in the same directory as the notebooks.
 4. Verify library compatibility, data availability and historical calculation assumptions before executing the analysis.
 
 ## Portfolio Relevance
