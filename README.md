@@ -92,4 +92,4 @@ This project demonstrates the application of Python to financial data analysis a
 - Data visualization and interpretation of analytical results
 - Communication of financial insights through reproducible research workflows
 
-The project connects **financial analytics, quantitative modeling and Python-based data analysis**, supporting my broader interests in Business Intelligence, Data Analytics and Finance.
+The project connects **financial analytics, quantitative modeling and Python-based data analysis**, supporting my broader interests in Business Intelligence, Data Analytics and Finance. 
