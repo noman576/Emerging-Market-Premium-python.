@@ -63,10 +63,14 @@ This repository is an archive of the original academic analysis and is not yet a
 
 ### Data Dependencies
 
-- `Final_Emerging.ipynb` requires `BRICS_L_M_S.csv`.
-- `Final_Emerging_Covid.ipynb` requires `BRICS_L_M_S_CORONA.csv`.
+The emerging-market notebooks use historical index datasets:
 
-These CSV files are not currently included in the repository. They must be obtained from the original authorized data source before the corresponding notebooks can run.
+- `BRICS_L_M_S.csv` — historical emerging-market analysis
+- `BRICS_L_M_S_CORONA.csv` — COVID-period emerging-market analysis
+
+Both datasets are included in this repository for reviewing and reproducing the original academic analysis, subject to library compatibility and the assumptions documented in the notebooks.
+
+The developed-market notebooks retrieve historical data using `pandas_datareader` and Yahoo Finance. This interface may require updates to work with current services.
 
 ### Technical Limitations
 
