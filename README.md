@@ -35,11 +35,30 @@ The analysis uses historical risk-free-rate assumptions documented in the notebo
 
 ## Key Findings
 
-- The selected developed-market portfolios experienced weaker expected returns and greater volatility in the COVID-period analysis.
-- The emerging-market results were mixed rather than consistently showing a higher premium.
-- In the COVID-period comparison, the emerging-market maximum-Sharpe portfolio showed higher estimated return and volatility, while the allocation patterns differed substantially between minimum-variance and maximum-Sharpe portfolios.
-- Overall conclusion: The project did not consistently confirm an emerging-market premium across the selected indices and periods.
-These are findings from the original historical analysis, not independently reproduced or updated estimates.
+The updated analysis uses daily simple returns, a consistent
+250-trading-day annualization convention, and 2,500 randomly
+generated portfolios per market group and period.
+
+### Maximum-Sharpe Portfolio Results
+
+| Market Group | Period | Annualized Return | Annualized Volatility | Sharpe Ratio |
+|---|---|---:|---:|---:|
+| Developed markets | 2019 | 22.56% | 9.88% | 2.223 |
+| Emerging markets | 2019 | 23.25% | 10.30% | 1.661 |
+| Developed markets | COVID period | 7.93% | 28.20% | 0.270 |
+| Emerging markets | COVID period | 15.09% | 23.68% | 0.422 |
+
+### Interpretation
+
+- In 2019, the developed-market maximum-Sharpe portfolio achieved higher risk-adjusted returns than the emerging-market portfolio.
+- During the COVID-period analysis, the emerging-market maximum-Sharpe portfolio achieved higher estimated returns and a higher Sharpe ratio than the developed-market portfolio.
+- Both market groups experienced substantially lower risk-adjusted performance during the COVID period than in 2019.
+- The results do not establish a consistent emerging-market premium across both periods.
+
+These findings are based on historical data, selected indices,
+risk-free-rate assumptions, and randomly sampled portfolios.
+They should not be interpreted as general market conclusions
+or investment recommendations.
 
 ## Notebooks
 
