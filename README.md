@@ -26,12 +26,12 @@ The analysis is historical and exploratory; it is not an investment recommendati
 
 ## Methodology
 
-1. Load historical index prices (Yahoo Finance through pandas_datareader for developed markets; local CSV datasets for emerging markets).
+1. Load historical index prices (Yahoo Finance through `yfinance` for developed markets; included CSV datasets for emerging markets).
 2. Calculate returns, covariance and volatility statistics.
 3. Generate 2,500 randomly weighted portfolios for each market group and period.
 4. Identify the sampled portfolio with the lowest volatility and the sampled portfolio with the highest Sharpe ratio.
 5. Compare portfolio returns, volatility, Sharpe ratios and index weights; visualize the risk–return distributions.
-The analysis uses historical risk-free-rate assumptions documented in the notebooks. The randomly sampled portfolios approximate the optimization objectives; they are not exact analytical optimizers. Results can vary between runs because the original notebooks do not set a random seed.
+The analysis uses historical risk-free-rate assumptions documented in the notebooks. The randomly sampled portfolios approximate the optimization objectives; they are not exact analytical optimizers. The updated notebooks use a fixed random seed (`42`) for reproducible portfolio simulations, although results may still change if the underlying market data or software environment changes.
 
 ## Key Findings
 
@@ -72,7 +72,7 @@ or investment recommendations.
 ## Tools and Techniques
 
 - **Programming:** Python, Jupyter Notebook
-- **Libraries:** pandas, NumPy, SciPy, Matplotlib, pandas_datareader
+- **Libraries:** pandas, NumPy, SciPy, Matplotlib, yfinance, pandas_datareader (legacy imports)
 - **Financial Analytics:** Financial time-series analysis, portfolio simulation, volatility analysis and Sharpe-ratio analysis
 - **Analytical Methods:** Risk–return comparison, quantitative modeling and data visualization
 
@@ -97,7 +97,7 @@ All four notebooks have been executed successfully in Google Colab following upd
 
 - The analysis uses historical market data and assumptions documented in the notebooks.
 - Historical prices retrieved from Yahoo Finance may differ from the original downloaded values.
-- The portfolio simulations use random sampling without a fixed random seed, so results may vary between runs.
+- The portfolio simulations use 2,500 randomly sampled portfolios with a fixed seed (`42`). The selected portfolios approximate the optimization objectives rather than providing exact analytical solutions.
 - The notebooks have not been independently validated against the original historical calculations.
 - The project is academic research and should not be interpreted as investment advice.
 
