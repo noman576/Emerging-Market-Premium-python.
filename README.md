@@ -59,32 +59,36 @@ These are findings from the original historical analysis, not independently repr
 
 ## Reproducibility and Limitations
 
-This repository is an archive of the original academic analysis and is not yet a fully reproducible software package.
+The original academic analysis has been updated for compatibility with Google Colab and more recent Python libraries.
 
 ### Data Dependencies
 
-The emerging-market notebooks use historical index datasets:
+The emerging-market notebooks use two historical CSV datasets included in this repository:
 
-- `BRICS_L_M_S.csv` — historical emerging-market analysis
+- `BRICS_L_M_S.csv` — emerging-market analysis for 2019
 - `BRICS_L_M_S_CORONA.csv` — COVID-period emerging-market analysis
 
-Both datasets are included in this repository for reviewing and reproducing the original academic analysis, subject to library compatibility and the assumptions documented in the notebooks.
+The developed-market notebooks retrieve historical adjusted market prices from Yahoo Finance using the `yfinance` library.
 
-The developed-market notebooks retrieve historical data using `pandas_datareader` and Yahoo Finance. This interface may require updates to work with current services.
+### Testing and Compatibility
 
-### Technical Limitations
+All four notebooks have been executed successfully in Google Colab following updates to data loading, date-index handling and Matplotlib chart exports.
 
-- **Historical data retrieval:** The developed-market notebooks use the historical `pandas_datareader` Yahoo Finance interface, which may not work reliably with current library versions or services.
-- **Historical assumptions:** The analysis uses historical datasets, risk-free-rate assumptions and annualization choices.
-- **Current validation:** The analysis has not been rerun or validated against current market data.
-- **Saved outputs:** The notebooks contain saved outputs that allow readers to review the original analysis even when live data retrieval is unavailable.
+### Limitations
+
+- The analysis uses historical market data and assumptions documented in the notebooks.
+- Historical prices retrieved from Yahoo Finance may differ from the original downloaded values.
+- The portfolio simulations use random sampling without a fixed random seed, so results may vary between runs.
+- The notebooks have not been independently validated against the original historical calculations.
+- The project is academic research and should not be interpreted as investment advice.
 
 ### How to Explore the Project
 
-1. Open the relevant Jupyter notebooks directly on GitHub.
-2. Review the Python code, saved calculations, charts and analytical findings.
-3. To rerun the emerging-market notebooks, download the repository and ensure the CSV datasets remain in the same directory as the notebooks.
-4. Verify library compatibility, data availability and historical calculation assumptions before executing the analysis.
+1. Open the Jupyter notebooks directly on GitHub to review the code, visualizations and saved outputs.
+2. To rerun the notebooks, open them in Google Colab or a compatible local Python environment.
+3. For the emerging-market notebooks, keep the corresponding CSV datasets in the notebook's working directory.
+4. For the developed-market notebooks, install `yfinance` and ensure internet access is available.
+5. Review the historical assumptions before interpreting or comparing the results.
 
 ## Portfolio Relevance
 
